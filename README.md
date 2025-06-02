@@ -1,4 +1,4 @@
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=4l3xand3r-ia/practica-5-Analisis-de-sistemas-biologicos-21212848-)
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=4l3xand3r-ia/Proyecto_GD)
 
 # Gemelos Digitales. Proyecto [Torres21212848]
 
@@ -8,29 +8,32 @@ Alexander Torres Avila
 Ingeniería Biomédica, Departamento de Ingeniería Eléctrica y Electrónica, Tecnológico Nacional de México/IT Tijuana. Blvd. Alberto Limón Padilla s/n, Tijuana, C.P. 22454, B.C., México. Email: l21212848@tectijuana.edu.mx
 
 ## Resumen del proyecto
-En esta práctica se estudia un sistema dinámico compuesto por tres ecuaciones diferenciales ordinarias (EDOs) de primer orden, basado en modelos clásicos como el sistema presa-depredador de Lotka-Volterra y el modelo de Itik y Banks. El sistema describe la interacción entre tres tipos de células en un entorno biológico: células patológicas (anormales), células normales (sanas) y células efectoras (como las células NK o citotóxicas).
+Este proyecto tiene como objetivo estudiar un sistema dinámico no lineal compuesto por tres ecuaciones diferenciales ordinarias de primer orden, que describe la interacción entre tres poblaciones celulares: células patológicas (x), células normales (y) y células efectoras inmunológicas (z). El sistema está basado en un modelo multiplicativo tipo acción de masas, que incorpora crecimiento, interacción cruzada y regulación inmunológica.
 
-Las ecuaciones se expresan como:
+El modelo matemático considerado es:
 
-ẋ = r₁x(1 − b₁x) − a₁₂xy − a₁₃xz
-Crecimiento logístico de células patológicas con interacción negativa de células normales y efectoras.
+𝑥 = 𝜌1𝑥𝑦𝑧
+𝑦 = 𝜌2𝑦−𝜌3𝑥𝑦
+𝑧 = 𝜌4𝑧−𝜌5𝑥𝑧
 
-ẏ = r₂y(1 − b₂y) − a₂₁xy
-Crecimiento logístico de células sanas, afectadas por células patológicas.
+Donde cada ecuación representa una dinámica fundamental:
 
-ż = (r₃ − a₃₁x)z − d₃z + ρᵢ
-Crecimiento de células efectoras regulado por acción de masas, muerte celular e inmunoterapia.
+Las células patológicas se activan mediante la interacción simultánea con células sanas e inmunológicas.
 
-Este modelo permite ilustrar cómo se regulan mutuamente estas poblaciones celulares, simulando fenómenos como infecciones, respuesta inmune, crecimiento tumoral e intervención mediante terapias inmunológicas. El análisis se centra en cómo los parámetros y condiciones iniciales determinan la existencia de diferentes conjuntos compactos invariantes (áreas donde las soluciones del sistema permanecen confinadas), lo que es crucial para predecir la evolución del sistema y establecer control sobre él.
+Las células sanas crecen proporcionalmente pero son atacadas por células patológicas.
 
-La experimentación in silico con este modelo contribuye a comprender sistemas autorregulados complejos y proporciona una base sólida para el desarrollo de gemelos digitales en salud.
+Las células efectoras tienen crecimiento basal, pero se inhiben frente a poblaciones tumorales.
+
+Mediante simulaciones en MATLAB, se analizan las trayectorias del sistema en el tiempo y se confirma su positividad, garantizando que las soluciones biológicamente válidas permanecen en el dominio positivo. Se observa además una dinámica de estabilización, donde algunas variables convergen hacia cero o uno, representando estados estables o de control biológico.
+
+Este modelo ofrece una representación conceptual de procesos como el crecimiento tumoral, la inmunorregulación y el daño tisular. Además, sirve como base teórica para exploraciones futuras en inmunoterapia computacional y modelos de gemelos digitales aplicados a sistemas celulares.
 
 ## Objetivos específicos
-1. Modelar interacciones celulares complejas mediante EDOs que describen dinámicas como competencia, depredación e inmunorregulación.
-2. Analizar el comportamiento cualitativo del sistema, identificando puntos de equilibrio y dominios de estabilidad.
-3. Evaluar el impacto de parámetros clave, como tasas de crecimiento, interacción y tratamiento (ρᵢ), en la evolución del sistema.
-4. Visualizar trayectorias del sistema y conjuntos invariantes para distintos valores de condiciones iniciales, destacando la sensibilidad del sistema.
-5. Aplicar el modelo a contextos clínicos, como el control del crecimiento tumoral y el diseño de terapias personalizadas basadas en inmunología computacional.
+1. Formular un sistema de ecuaciones diferenciales que modele interacciones celulares tipo acción de masas entre poblaciones patológicas, sanas e inmunológicas.
+2. Verificar la positividad del sistema a partir de condiciones matemáticas y simulaciones numéricas, asegurando interpretaciones válidas en biología.
+3. Explorar el comportamiento cualitativo del sistema bajo diferentes condiciones iniciales y valores de parámetros 𝜌1 a 𝜌5​, evaluando su impacto en la estabilidad y evolución temporal.
+4. Visualizar trayectorias temporales de las tres poblaciones y comparar su normalización y convergencia para interpretar estados estacionarios o dinámicas cíclicas.
+5. Discutir el modelo en el contexto de procesos inmunológicos, como la activación celular, la respuesta a invasores o la intervención terapéutica, mediante experimentación computacional (in silico).
 
 ## Docente
 Dr. Paul A. Valle
