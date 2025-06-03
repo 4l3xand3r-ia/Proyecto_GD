@@ -1,0 +1,32 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: MATLAB
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Alexander
+    email: l21212848@tectijuana.edu.mx
+    family-names: Torres Avila
+    affiliation: 'Tecnológico Nacional de México '
+identifiers:
+  - type: url
+    value: >-
+      https://github.com/4l3xand3r-ia/Gemelos-Digitales-Leyes-de-crecimiento-exponencial-Torres21212848-
+abstract: |-
+  Tecnológico Nacional de México 
+  Instituto tecnológico de Tijuana 
+  ingeniería biomédica 
+  Gemelos Digitales
+  Practica 1: Leyes de crecimiento exponencial
+keywords:
+  - Leyes de crecimiento exponencial
+  - Método de Heund
+  - Nanohidrogeles
+  - 'Farmacocinética '
+  - Protocolo basado en modelos
+license: BSD-2-Clause
+date-released: '2025-02-10'
