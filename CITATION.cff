@@ -15,18 +15,18 @@ authors:
 identifiers:
   - type: url
     value: >-
-      https://github.com/4l3xand3r-ia/Gemelos-Digitales-Leyes-de-crecimiento-exponencial-Torres21212848-
+      https://github.com/4l3xand3r-ia/Proyecto_GD
 abstract: |-
   Tecnológico Nacional de México 
   Instituto tecnológico de Tijuana 
   ingeniería biomédica 
   Gemelos Digitales
-  Practica 1: Leyes de crecimiento exponencial
+  Proyecto final
 keywords:
-  - Leyes de crecimiento exponencial
-  - Método de Heund
-  - Nanohidrogeles
-  - 'Farmacocinética '
-  - Protocolo basado en modelos
+  - Interacción celular
+  - Modelo matemático
+  - Regresión no lineal
+  - Predicción dinámica
+  - Gemelos digitales
 license: BSD-2-Clause
-date-released: '2025-02-10'
+date-released: '2025-06-2'
